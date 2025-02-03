@@ -63,17 +63,14 @@ body{
  
 }
 
-.fa {
-    color: #ae2896;
-}
+
 
 span {
     color: #000;
+    margin: 0px 3px;
 }
 
-.fa-book:before {
-    color: #ae2896;
-}
+
 
 .library{
     background-color: #ffe6e64f;
@@ -113,7 +110,7 @@ span {
     font-weight: 300;
     color:#b3b3b3;
     margin-right: 10px;
-    padding-right:8px;
+    padding-right:18px;
 }
 
 .library .library__content .fa-plus{

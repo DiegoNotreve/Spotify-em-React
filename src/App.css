@@ -73,6 +73,11 @@ table {
     --bg-premium-text: #0d0030;
 }
 
+.fa-book, .fa-home, .fa-plus, path {
+  color: #e90b85;
+}
+
+
 
 /*MEDIA-QUERY*/
 @media (max-width: 1015px){

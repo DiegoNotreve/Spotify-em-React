@@ -59,7 +59,7 @@ transition: all 0.2s;
 .header__search {
   display: flex;
   align-items: center;
-  width: 364px;
+  width: 600px;
   height: 48px;
   margin-left: 8px;
   background-color: #ffe6e64f;

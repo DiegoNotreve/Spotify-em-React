@@ -7,6 +7,8 @@ import SearchArtist from './SearchArtist.jsx';
 
 
 function App() {
+
+
   return (
     <div>
     <Main/>
