@@ -1,18 +1,18 @@
 import React from "react";
 import "./Header.css";
-import smallRight from "../assets/icons/small-right.png";
-import smallLeft from "../assets/icons/small-left.png";
 import search from "../assets/icons/search.png";
+import "bootstrap-icons/font/bootstrap-icons.css";
+
 
 const Header = ({ setSearchTerm }) => {
   return (
     <nav className="header__navigation">
       <div className="navigation">
         <button className="arrow-left">
-          <img src={smallLeft} alt="Seta esquerda" />
+        <i class="bi bi-arrow-left-circle-fill"></i>
         </button>
         <button className="arrow-right">
-          <img src={smallRight} alt="Seta direita" />
+        <i class="bi bi-arrow-right-circle-fill"></i>
         </button>
       </div>
 
