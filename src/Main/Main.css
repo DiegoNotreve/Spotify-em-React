@@ -2,135 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
 
-/* HEADER */
 
-.main-container {
-  max-width: 80vw;
-  height: 100vh;
-  margin-left: 320px;
-  margin-right: 56px;
- 
-}
-
-.header__navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px;
-  border-radius: 8px;
-  background-color: #ffe6e64f;
-  border: 1px solid #000;
-  padding: 12px;
-}
-
-.header__navigation .navigation {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.header__navigation .navigation .arrow-left {
-  margin-right: 1.25rem;
-}
-
-.arrow-left,
-.arrow-right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  background: var(--bg-icon);
-  background-color: var(--bg-arrow-color);
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.header__login {
-  display: flex;
-  align-items: center;
-}
-
-.header__login .login {
-background: linear-gradient(30deg, #f1c1ed 30%, #37cbe9 100%);
-transition: all 0.2s;
-}
-
-.header__search {
-  display: flex;
-  align-items: center;
-  width: 600px;
-  height: 48px;
-  margin-left: 8px;
-  background-color: #ffe6e64f;
-  border-radius: 500px;
-  border: 1px solid transparent;
-}
-
-.header__search img {
-  width: 16px;
-  height: 16px;
-  margin-left: 10px;
-}
-
-.header__search input {
-  background: transparent;
-  border: none;
-  padding: 0px 100px 0 12px;
-  color: #fff;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  outline: none;
-}
-
-.header__login .subscribe {
-  color: #000;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: transparent;
-  border: 2px solid transparent;
-  padding: 8px 16px;
-  margin-right: 32px;
-  transition: all 0.3s ease-in-out;
-}
-
-.header__login .subscribe:hover {
-    transform: scale(1.05);
-    color: #f1c1ed;
-  border-radius: 10px;
-}
-
-
-.header__login .login {
-  width: 100px;
-  height: 48px;
-  color: #000;
-  font-size: 16px;
-  font-weight: 700;
-  border-radius: 40px;
-}
-
-.header__search span{
-  padding: 15px;
-}
-
-/*PLAYLIST*/
-
-.header__search:hover {
-  border: 1px solid #fff;
-}
-.header__login .subscribe:hover {
-  transform: scale(1.04);
-  
-}
-
-.header__login .login:hover {
-  transform: scale(1.04);
-}
-/* FIM HOVER */
-
-/*FIM HEADER */
 
 /* PLAYLIST */
 .playlist-container {
@@ -140,6 +12,7 @@ transition: all 0.2s;
   border-radius: 10px;
   background-color: #ffe6e64f;
   border: 1px solid #000;
+  width: 100%;
 }
 
 .playlist {
@@ -372,6 +245,7 @@ font-size: 30px;
   text-overflow: ellipsis;
   white-space: nowrap;
   min-height: 62px;
+ 
 }
 
 .card-text a {
@@ -410,6 +284,11 @@ font-size: 30px;
   transition: all ease 0.4s;
 }
 
+.artist-card {
+  width: 100px;
+  height: auto;
+}
+
 .artist-card:hover .play .fa-play {
   opacity: 1;
   transform: translateY(-20px);
@@ -421,7 +300,15 @@ font-size: 30px;
 }
 
 #result-artist {
+  display: grid;
+    justify-items: center;
+    gap: 16px;
   padding: 20px 40px;
+  overflow-y: auto;
+  max-height: 43vh;
+  margin: 24px;
+  width: 80%;
 }
-/* FIM CARD ARTISTA */
 
+
+/* FIM CARD ARTISTA */

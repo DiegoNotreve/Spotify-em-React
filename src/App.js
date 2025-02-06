@@ -1,22 +1,20 @@
+import React, { useState } from "react";
+import Header from "./Header/Header";
+import Main from "./Main/Main";
+import Sidebar from "./Sidebar/Sidebar";
+import Footer from "./Footer/Footer";
 
-import './App.css';
-import Sidebar from './Sidebar/Sidebar.js';
-import Main from './Main/Main.js';
-import Footer from './Footer/Footer.js';
-import SearchArtist from './SearchArtist.jsx';
-
-
-function App() {
-
+const App = () => {
+  const [searchTerm, setSearchTerm] = useState(""); 
 
   return (
     <div>
-    <Main/>
-    <Sidebar/>
-    <Footer/>
-    <SearchArtist />
+      <Header setSearchTerm={setSearchTerm} /> 
+      <Sidebar />
+      <Main searchTerm={searchTerm || ""} /> 
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
